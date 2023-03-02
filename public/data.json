@@ -1,0 +1,113 @@
+{
+  "members": [
+    {
+      "name": "Chinaza Akachi",
+      "status": "In Progress",
+      "size": "456 MB",
+      "date": "09 Dec 2019",
+      "time": "05:18AM",
+      "selected": false
+    },
+    {
+      "name": "Bernarr Dominik",
+      "status": "In Progress",
+      "size": "345 MB",
+      "date": "26 Feb 2019",
+      "time": "05:10AM",
+      "selected": false
+    },
+    {
+      "name": "Beth Murphy",
+      "status": "In Progress",
+      "size": "498 MB",
+      "date": "16 Sep 2019",
+      "time": "00:37PM",
+      "selected": false
+    },
+    {
+      "name": "Dameon Peterson",
+      "status": "In Progress",
+      "size": "125 MB",
+      "date": "08 Oct 2019",
+      "time": "05:11AM",
+      "selected": false
+    },
+    {
+      "name": "Dameon Peterson",
+      "status": "In Progress",
+      "size": "125 MB",
+      "date": "08 Oct 2019",
+      "time": "05:11AM",
+      "selected": false
+    },
+    {
+      "name": "Dameon Peterson",
+      "status": "In Progress",
+      "size": "125 MB",
+      "date": "08 Oct 2019",
+      "time": "05:11AM",
+      "selected": false
+    },
+    {
+      "name": "Dameon Peterson",
+      "status": "In Progress",
+      "size": "125 MB",
+      "date": "08 Oct 2019",
+      "time": "05:11AM",
+      "selected": false
+    },
+    {
+      "name": "Beth Murphy",
+      "status": "In Progress",
+      "size": "498 MB",
+      "date": "16 Sep 2019",
+      "time": "00:37PM",
+      "selected": false
+    }
+  ],
+  "columnsData": [
+    {
+      "name": "Instagram",
+      "valuesPerMonths": [
+        200, 135, 200, 180, 112, 67, 112, 155, 112, 155, 67, 195
+      ],
+      "color": "#4339F2"
+    },
+    {
+      "name": "Facebook",
+      "valuesPerMonths": [110, 72, 77, 90, 77, 45, 77, 72, 77, 82, 45, 90],
+      "color": "#34B53A"
+    },
+    {
+      "name": "Twitter",
+      "valuesPerMonths": [90, 63, 67, 82, 67, 40, 67, 72, 67, 72, 36, 82],
+      "color": "#FFB200"
+    }
+  ],
+  "circleRatioData": [
+    {
+      "name": "Instagram",
+      "ratio": 0.67,
+      "strokeColor": "#4339F2",
+      "bgColor": "#DAD7FE"
+    },
+    {
+      "name": "Facebook",
+      "ratio": 0.46,
+      "strokeColor": "#34B53A",
+      "bgColor": "#E2FBD7"
+    },
+    {
+      "name": "Twitter",
+      "ratio": 0.15,
+      "strokeColor": "#02A0FC",
+      "bgColor": "#CCF8FE"
+    },
+    {
+      "name": "Tiktok",
+      "ratio": 0.67,
+      "strokeColor": "#FF3A29",
+      "bgColor": "#FFE5D3"
+    }
+  ]
+}
