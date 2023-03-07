@@ -1,7 +1,6 @@
 import Icons from "../Icons";
 
 export default function StackedColumnChart({ dataArray }) {
-
   const arraysHandler = (rawData) => {
     let arr = [];
     rawData.forEach((i) => {
@@ -20,7 +19,7 @@ export default function StackedColumnChart({ dataArray }) {
         total = tempTotal;
       }
     });
-    return total;
+    return Math.ceil(total / 100) * 100;
   };
 
   const matrixCreater = (arrays) => {
@@ -42,7 +41,7 @@ export default function StackedColumnChart({ dataArray }) {
       className="font-dmsans text-[10px] leading-normal opacity-40"
       key={index}
     >
-      {index * (Math.ceil((Math.ceil(maxValue / 100) * 100) / 4 / 100) * 100)}
+      {index * (maxValue / 4 / 100) * 100}
     </span>
   ));
 
@@ -57,7 +56,14 @@ export default function StackedColumnChart({ dataArray }) {
               : `calc(${(ratio / maxValue) * 100}% + ${index * 8}px)`
           }`,
           zIndex: 10 - index,
-          bottom: `calc(${(matrix.reduce((acc, curr, ind) => (ind < index) ? acc+curr : acc, 0) / maxValue) * 100}% - ${index * 8}px)`,
+          bottom: `calc(${
+            (matrix.reduce(
+              (acc, curr, ind) => (ind < index ? acc + curr : acc),
+              0
+            ) /
+              maxValue) *
+            100
+          }% - ${index * 8}px)`,
           backgroundColor: dataArray[index].color,
         }}
         className={`absolute rounded-full w-full`}
@@ -86,7 +92,7 @@ export default function StackedColumnChart({ dataArray }) {
           {dataArray.map((el, index) => (
             <div className="flex items-center gap-[6px]" key={index}>
               <span
-              style={{backgroundColor: el.color}}
+                style={{ backgroundColor: el.color }}
                 className={`w-[14px] h-[14px] rounded-full`}
               ></span>
               {el.name}
